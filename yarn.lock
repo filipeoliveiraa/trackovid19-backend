@@ -168,6 +168,16 @@ ajv@^6.10.2, ajv@^6.11.0, ajv@^6.5.5:
     json-schema-traverse "^0.4.1"
     uri-js "^4.2.2"
 
+ajv@^6.12.0:
+  version "6.12.6"
+  resolved "https://registry.yarnpkg.com/ajv/-/ajv-6.12.6.tgz#baf5a62e802b07d977034586f8c3baf5adf26df4"
+  integrity sha512-j3fVLgvTo527anyYyJOGTYJbG+vnnQYvE0m5mmkc1TK+nxAppkCLMIL0aZ4dblVCNoGShhm+kzE4ZUykBoMg4g==
+  dependencies:
+    fast-deep-equal "^3.1.1"
+    fast-json-stable-stringify "^2.0.0"
+    json-schema-traverse "^0.4.1"
+    uri-js "^4.2.2"
+
 ansi-escapes@^3.0.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/ansi-escapes/-/ansi-escapes-3.2.0.tgz#8780b98ff9dbf5638152d1f1fe5c1d7b4442976b"
@@ -300,6 +310,15 @@ avvio@^6.3.0:
   version "6.3.1"
   resolved "https://registry.yarnpkg.com/avvio/-/avvio-6.3.1.tgz#201ec26505551657272cda90c23ef1cb0c7e390a"
   integrity sha512-jfcOyzK+TVBRae/FrIhlgVIDcGzRzIyDvOq+5e1IkxY141QSVZoe9kKhOwLdYkDBCkOQT6JU/53NkJY0qNrpqw==
+  dependencies:
+    archy "^1.0.0"
+    debug "^4.0.0"
+    fastq "^1.6.0"
+
+avvio@^6.5.0:
+  version "6.5.0"
+  resolved "https://registry.yarnpkg.com/avvio/-/avvio-6.5.0.tgz#d2cf119967fe90d2156afc29de350ced800cdaab"
+  integrity sha512-BmzcZ7gFpyFJsW8G+tfQw8vJNUboA9SDkkHLZ9RAALhvw/rplfWwni8Ee1rA11zj/J7/E5EvZmweusVvTHjWCA==
   dependencies:
     archy "^1.0.0"
     debug "^4.0.0"
@@ -1366,6 +1385,15 @@ fast-json-stringify@^1.14.0, fast-json-stringify@^1.16.0:
     deepmerge "^4.2.2"
     string-similarity "^4.0.1"
 
+fast-json-stringify@^1.18.0:
+  version "1.21.0"
+  resolved "https://registry.yarnpkg.com/fast-json-stringify/-/fast-json-stringify-1.21.0.tgz#51bc8c6d77d8c7b2cc7e5fa754f7f909f9e1262f"
+  integrity sha512-xY6gyjmHN3AK1Y15BCbMpeO9+dea5ePVsp3BouHCdukcx0hOHbXwFhRodhcI0NpZIgDChSeAKkHW9YjKvhwKBA==
+  dependencies:
+    ajv "^6.11.0"
+    deepmerge "^4.2.2"
+    string-similarity "^4.0.1"
+
 fast-levenshtein@~2.0.6:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/fast-levenshtein/-/fast-levenshtein-2.0.6.tgz#3d8a5c66883a16a30ca8643e851f19baa7797917"
@@ -1536,6 +1564,26 @@ fastify@^2.0.0:
     secure-json-parse "^2.0.0"
     tiny-lru "^7.0.2"
 
+fastify@^2.15.3:
+  version "2.15.3"
+  resolved "https://registry.yarnpkg.com/fastify/-/fastify-2.15.3.tgz#ba941e9b62175f053ef01c3eea9fa76e91fffed1"
+  integrity sha512-2O+A9SjHpbH/SgDDMA+xIznhx/rDeNuwPIiZSFVU7fwOiiFfQjHmfu21jp22wMmsZ5PYKYFR+pze2TzoAUmOtw==
+  dependencies:
+    abstract-logging "^2.0.0"
+    ajv "^6.12.0"
+    avvio "^6.5.0"
+    fast-json-stringify "^1.18.0"
+    find-my-way "^2.2.2"
+    flatstr "^1.0.12"
+    light-my-request "^3.7.3"
+    middie "^4.1.0"
+    pino "^5.17.0"
+    proxy-addr "^2.0.6"
+    readable-stream "^3.6.0"
+    rfdc "^1.1.2"
+    secure-json-parse "^2.1.0"
+    tiny-lru "^7.0.2"
+
 fastparallel@^2.2.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/fastparallel/-/fastparallel-2.3.0.tgz#1e709bfb6a03993f3857e3ce7f01311ce7602613"
@@ -1615,6 +1663,15 @@ find-my-way@^2.2.0:
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/find-my-way/-/find-my-way-2.2.2.tgz#0d119a6daa354e20d61591a850a112d424c5bc06"
   integrity sha512-zk3eOsS1tABNQjII0vCbhkqgsX/COpRUxl0b5rlA41V2Ft7jWDr30LhYq4BZXLAlzw5yskg24XQG/U1wCT30vQ==
+  dependencies:
+    fast-decode-uri-component "^1.0.0"
+    safe-regex2 "^2.0.0"
+    semver-store "^0.3.0"
+
+find-my-way@^2.2.2:
+  version "2.2.5"
+  resolved "https://registry.yarnpkg.com/find-my-way/-/find-my-way-2.2.5.tgz#86ce825266fa28cd962e538a45ec2aaa84c3d514"
+  integrity sha512-GjRZZlGcGmTh9t+6Xrj5K0YprpoAFCAiCPgmAH9Kb09O4oX6hYuckDfnDipYj+Q7B1GtYWSzDI5HEecNYscLQg==
   dependencies:
     fast-decode-uri-component "^1.0.0"
     safe-regex2 "^2.0.0"
@@ -2629,6 +2686,16 @@ light-my-request@^3.7.0:
     readable-stream "^3.4.0"
     set-cookie-parser "^2.4.1"
 
+light-my-request@^3.7.3:
+  version "3.8.0"
+  resolved "https://registry.yarnpkg.com/light-my-request/-/light-my-request-3.8.0.tgz#7da96786e4d479371b25cfd524ee05d5d583dae8"
+  integrity sha512-cIOWmNsgoStysmkzcv2EwvLwMb2hEm6oqKMerG/b5ey9F0we2Qony8cAZgBktmGPYUvPyKsDCzMcYU6fXbpWew==
+  dependencies:
+    ajv "^6.10.2"
+    cookie "^0.4.0"
+    readable-stream "^3.4.0"
+    set-cookie-parser "^2.4.1"
+
 listenercount@~1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/listenercount/-/listenercount-1.0.1.tgz#84c8a72ab59c4725321480c975e6508342e70937"
@@ -3423,7 +3490,7 @@ pino-std-serializers@^2.4.2:
   resolved "https://registry.yarnpkg.com/pino-std-serializers/-/pino-std-serializers-2.4.2.tgz#cb5e3e58c358b26f88969d7e619ae54bdfcc1ae1"
   integrity sha512-WaL504dO8eGs+vrK+j4BuQQq6GLKeCCcHaMB2ItygzVURcL1CycwNEUHTD/lHFHs/NL5qAz2UKrjYWXKSf4aMQ==
 
-pino@^5.15.0:
+pino@^5.15.0, pino@^5.17.0:
   version "5.17.0"
   resolved "https://registry.yarnpkg.com/pino/-/pino-5.17.0.tgz#b9def314e82402154f89a25d76a31f20ca84b4c8"
   integrity sha512-LqrqmRcJz8etUjyV0ddqB6OTUutCgQULPFg2b4dtijRHUsucaAdBgSUW58vY6RFSX+NT8963F+q0tM6lNwGShA==
@@ -3522,7 +3589,7 @@ proto-list@~1.2.1:
   resolved "https://registry.yarnpkg.com/proto-list/-/proto-list-1.2.4.tgz#212d5bfe1318306a420f6402b8e26ff39647a849"
   integrity sha1-IS1b/hMYMGpCD2QCuOJv85ZHqEk=
 
-proxy-addr@^2.0.4:
+proxy-addr@^2.0.4, proxy-addr@^2.0.6:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/proxy-addr/-/proxy-addr-2.0.6.tgz#fdc2336505447d3f2f2c638ed272caf614bbb2bf"
   integrity sha512-dh/frvCBVmSsDYzw6n926jv974gddhkFPfiN8hPOi30Wax25QZyZEGveluCgliBnqmuM+UJmBErbAUFIoDbjOw==
@@ -3650,7 +3717,7 @@ read-pkg@^3.0.0:
     string_decoder "~1.1.1"
     util-deprecate "~1.0.1"
 
-readable-stream@^3.1.1, readable-stream@^3.4.0:
+readable-stream@^3.1.1, readable-stream@^3.4.0, readable-stream@^3.6.0:
   version "3.6.0"
   resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-3.6.0.tgz#337bbda3adc0706bd3e024426a286d4b4b2c9198"
   integrity sha512-BViHy7LKeTz4oNnkcLJ+lVSL6vpiFeX6/d3oSH8zCW7UxP2onchk+vTGB143xuFjHS3deTgkKoXXymXqymiIdA==
@@ -3896,6 +3963,11 @@ secure-json-parse@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/secure-json-parse/-/secure-json-parse-2.1.0.tgz#ae76f5624256b5c497af887090a5d9e156c9fb20"
   integrity sha512-GckO+MS/wT4UogDyoI/H/S1L0MCcKS1XX/vp48wfmU7Nw4woBmb8mIpu4zPBQjKlRT88/bt9xdoV4111jPpNJA==
+
+secure-json-parse@^2.1.0:
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/secure-json-parse/-/secure-json-parse-2.3.2.tgz#0284c9525c6f24d38774f13727addff80634c2e9"
+  integrity sha512-4oUSFU0w2d8/XQb7NO9dbMYyp/hxIwZPcZcGAlAAEziMRHs+NbUcx2Z5dda/z8o+avyQ8gpuYnTMlGh8SVwg9g==
 
 semver-store@^0.3.0:
   version "0.3.0"
